@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+    background: url("../../public/bg.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.wrapper::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0; left:0;
+    background: rgba(0, 0, 0, 0.676);
+    z-index: -1;
+}
+
+.header {
+    background: rgb(49, 95, 123);
+    font-size: 2em;
+    color: #fff;
+    padding: 20px;
+}
+
+.todoform {
+    width: 100%;
+    padding: 50px;
+}
+
+.todoinput {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    outline: none
+}
+
+.btn {
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    background: rgb(220, 220, 220);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.listitems {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.listitem {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border: 2px solid #fff;
+    background: rgb(143, 143, 143);
+    border-radius: 10px;
+    word-wrap: break-word;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    opacity: 1;
+    transition: 0.5s;
+
+    /* glassmorphism */
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 6px );
+    color: #fff;
+}
+
+.listitem h4 {
+    font-weight: 500;
+}
+
+.listitem button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(32, 32, 32);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
